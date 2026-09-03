@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sehaj Singh</title>
+<meta name="description" content="Computer engineering student at UMD. Perception, planning, and rendering for robots.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fcfcfa;
+    --ink:#22271f;
+    --ink-soft:#5a6153;
+    --rule:#d9dcd2;
+    --leaf:#2f6b3c;
+    --apple:#c2402f;
+    --max:72rem;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:16px}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Schibsted Grotesk",system-ui,sans-serif;
+    line-height:1.55;
+    padding:0 1.25rem;
+  }
+  a{color:var(--leaf);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:hover{color:var(--ink)}
+  a:focus-visible{outline:2px solid var(--leaf);outline-offset:3px;border-radius:2px}
+  .wrap{max-width:var(--max);margin:0 auto}
+
+  header{padding:3.5rem 0 0}
+  .masthead{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+  h1{font-size:1.35rem;font-weight:700;letter-spacing:-0.01em}
+  nav{display:flex;gap:1.4rem;font-size:0.95rem}
+
+  .intro{padding:4.5rem 0 4rem;border-bottom:1px solid var(--rule)}
+  .intro p{
+    font-size:clamp(1.6rem,3.6vw,2.6rem);
+    font-weight:500;line-height:1.25;letter-spacing:-0.015em;
+    max-width:56rem;
+  }
+  .intro p em{font-style:italic;font-weight:400;color:var(--ink-soft)}
+  .intro .sub{font-size:1.05rem;font-weight:400;color:var(--ink-soft);margin-top:1.4rem;max-width:44rem;letter-spacing:0}
+
+  .entry{display:grid;grid-template-columns:16rem 1fr 15rem;gap:2.5rem;padding:3rem 0;border-bottom:1px solid var(--rule)}
+  .entry-side .name{font-weight:700;font-size:1.1rem}
+  .entry-side .role{color:var(--ink-soft);font-size:0.92rem;margin-top:0.35rem;line-height:1.45}
+  .entry-side .links{margin-top:1rem;font-size:0.95rem;display:flex;flex-direction:column;gap:0.3rem;align-items:flex-start}
+
+  .entry-main p{max-width:38rem}
+  .entry-main p+p{margin-top:0.9rem}
+  .media{
+    margin-top:1.5rem;max-width:38rem;aspect-ratio:16/9;
+    border:1px dashed var(--rule);border-radius:4px;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--ink-soft);font-size:0.9rem;text-align:center;padding:1rem;
+  }
+  .media img,.media video{width:100%;height:100%;object-fit:cover;border-radius:4px}
+
+  .reads{display:flex;flex-direction:column;gap:1.6rem}
+  .read .figures{font-size:1.7rem;font-weight:500;letter-spacing:-0.01em;line-height:1.1;font-variant-numeric:tabular-nums}
+  .read .figures .to{color:var(--ink-soft);font-weight:400;padding:0 0.15em}
+  .read .figures .after{color:var(--leaf)}
+  .read .what{color:var(--ink-soft);font-size:0.9rem;margin-top:0.3rem;line-height:1.4}
+  .read.single .figures .after{color:var(--ink)}
+
+  .live{display:inline-flex;align-items:center;gap:0.5rem;font-weight:500;color:var(--ink)}
+  .live::before{content:"";width:0.55rem;height:0.55rem;border-radius:50%;background:var(--apple);flex:none}
+
+  .also{padding:3rem 0;border-bottom:1px solid var(--rule)}
+  .also h2{font-size:1.1rem;font-weight:700;margin-bottom:1rem}
+  .also p{max-width:44rem;color:var(--ink);margin-top:0.6rem}
+
+  footer{padding:3rem 0 4rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--ink-soft);font-size:0.95rem}
+
+  @media (max-width:56rem){
+    .entry{grid-template-columns:1fr;gap:1.4rem}
+    .reads{flex-direction:row;flex-wrap:wrap;gap:1.2rem 2.2rem}
+    .entry-side .links{flex-direction:row;gap:1.2rem}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="masthead">
+    <h1>Sehaj Singh</h1>
+    <nav>
+      <a href="https://github.com/sehaj1singh">GitHub</a>
+      <a href="https://www.linkedin.com/in/sehaj-singh1/">LinkedIn</a>
+      <!-- Drop Sehaj_Singh_Resume.pdf in the same folder as this file -->
+      <a href="Sehaj_Singh_Resume.pdf">Resume</a>
+      <a href="mailto:sehaj.s.public@gmail.com">Email</a>
+    </nav>
+  </div>
+</header>
+
+<section class="intro">
+  <p>I build software that has to answer to physical hardware: perception, planning, and rendering for robots. <em>Computer engineering at the University of Maryland.</em></p>
+  <p class="sub">This summer that meant teaching a cable-driven farm robot to see individual apples in a 3D scan of an orchard, and finding out the hard way that a path planner can be correct and still ask the machine to do something it physically can't.</p>
+</section>
+
+<section class="entry">
+  <div class="entry-side">
+    <div class="name">Tanada Hime</div>
+    <div class="role">Software engineering intern<br>Paphos Oneironautics<br>Summer 2026</div>
+    <div class="links">
+      <!-- TODO: add repo link once the pipeline is public -->
+      <a href="#">Pipeline code</a>
+    </div>
+  </div>
+  <div class="entry-main">
+    <p>A cable-driven robot that rides above terraced orchards. The farm is scanned into a Gaussian splat, and my job was turning that photoreal blur into things the robot can reason about: this tree, that apple, a path to it.</p>
+    <p>I built the 3D instance segmentation pipeline (SAM&nbsp;3 masks lifted through 85 camera poses, identity resolved by mask overlap instead of tracking), made the C++/OpenGL renderer fast enough to use, swapped A* for Theta* pathfinding, and shipped a natural language command bar so an operator can type "send the robot to the tree with the most apples."</p>
+    <div class="media">
+      Drop a 15-second screen recording of the orchard scene here:
+      picking a fruit, then the planned path. (Replace this div with a &lt;video&gt; tag.)
+    </div>
+  </div>
+  <div class="reads">
+    <div class="read">
+      <div class="figures">69.3<span class="to">→</span><span class="after">84.2</span></div>
+      <div class="what">segmentation F1 vs the color-clustering baseline, scored against hand-labeled trees</div>
+    </div>
+    <div class="read">
+      <div class="figures">32<span class="to">→</span><span class="after">60 fps</span></div>
+      <div class="what">renderer, via frustum culling and a background-thread depth sort</div>
+    </div>
+    <div class="read">
+      <div class="figures">154,000<span class="to">→</span><span class="after">458</span></div>
+      <div class="what">worst-case search expansions after constraining planning to the plane the robot can actually move in</div>
+    </div>
+  </div>
+</section>
+
+<section class="entry">
+  <div class="entry-side">
+    <div class="name">Shadow Box</div>
+    <div class="role">Solo project<br>2026, running now</div>
+    <div class="links">
+      <a class="live" href="https://shadowbox.gg">Play it live</a>
+    </div>
+  </div>
+  <div class="entry-main">
+    <p>A 1v1 multiplayer browser game you play with your body: MediaPipe reads your pose through the webcam and scores gestures at framerate, while you see your opponent over peer-to-peer WebRTC video.</p>
+    <p>I wrote the netcode (a WebSocket server holds authoritative match state and resolves simultaneous move commits), built the pose scoring, and run the whole deployment myself.</p>
+    <div class="media">
+      Drop a short gameplay clip or screenshot here. Two players mid-match is the shot.
+    </div>
+  </div>
+  <div class="reads">
+    <div class="read single">
+      <div class="figures"><span class="after">Live</span></div>
+      <div class="what">shipped and operated, not a demo repo. Open it in two tabs and play yourself</div>
+    </div>
+  </div>
+</section>
+
+<section class="entry">
+  <div class="entry-side">
+    <div class="name">Telemetry forensics</div>
+    <div class="role">Software developer intern<br>AAC, Tysons VA<br>Summer 2026</div>
+  </div>
+  <div class="entry-main">
+    <p>A Python telemetry engine was quietly writing corrupt records into a production pipeline. I root-caused two clamping bugs, then proved a third existed by forcing two servers into different states as a controlled A/B test and using the variance gap between them (0.031 vs 4.19) as the evidence.</p>
+    <p>Also built and ran the pipeline itself across three Linux hosts, from provisioning to bulk-upload automation.</p>
+  </div>
+  <div class="reads">
+    <div class="read">
+      <div class="figures">566,708<span class="to">→</span><span class="after">0</span></div>
+      <div class="what">erroneous records across a 5M-record dataset after the fixes</div>
+    </div>
+  </div>
+</section>
+
+<section class="entry">
+  <div class="entry-side">
+    <div class="name">Internia</div>
+    <div class="role">Co-built with a friend<br>2026</div>
+  </div>
+  <div class="entry-main">
+    <p>An ML research paper recommender on the Semantic Scholar API. I built the Next.js/TypeScript frontend with NextAuth, on a FastAPI and MongoDB backend.</p>
+  </div>
+  <div class="reads">
+    <div class="read single">
+      <div class="figures"><span class="after">1M+</span></div>
+      <div class="what">papers filtered across 24 research domains</div>
+    </div>
+  </div>
+</section>
+
+<section class="also">
+  <h2>Also</h2>
+  <p>I do computer vision research in UMD's Perception and Robotics Group, training and benchmarking Gaussian splatting and NeRF models on a SLURM GPU cluster.</p>
+  <p>And I'm on the executive board of Project LIFT, a 60+ student org that builds software for local small businesses; I co-lead client operations and help decide which projects we take on.</p>
+</section>
+
+<footer>
+  <span>sehaj.s.public@gmail.com</span>
+  <span>Boyds, Maryland</span>
+</footer>
+
+</div>
+</body>
+</html>
