@@ -59,7 +59,9 @@
     display:flex;align-items:center;justify-content:center;
     color:var(--ink-soft);font-size:0.9rem;text-align:center;padding:1rem;
   }
-  .media img,.media video{width:100%;height:100%;object-fit:cover;border-radius:4px}
+  .media img{width:100%;height:100%;object-fit:cover;border-radius:4px}
+  .media:has(video){aspect-ratio:auto;border:none;padding:0;background:#111;border-radius:4px}
+  .media video{display:block;width:100%;height:auto;border-radius:4px}
 
   .reads{display:flex;flex-direction:column;gap:1.6rem}
   .read .figures{font-size:1.7rem;font-weight:500;letter-spacing:-0.01em;line-height:1.1;font-variant-numeric:tabular-nums}
@@ -150,8 +152,6 @@
     <p>A 1v1 multiplayer browser game you play with your body: MediaPipe reads your pose through the webcam and scores gestures at framerate, while you see your opponent over peer-to-peer WebRTC video.</p>
     <p>I wrote the netcode (a WebSocket server holds authoritative match state and resolves simultaneous move commits), built the pose scoring, and run the whole deployment myself.</p>
     <div class="media"><video src="shadowbox.mp4" autoplay muted loop playsinline></video></div>
-      Drop a 20-30 second clip of you actually playing here: webcam visible, gestures landing. This clip is what makes people get the game.
-    </div>
   </div>
   <div class="reads">
     <div class="read single">
