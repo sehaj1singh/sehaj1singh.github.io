@@ -62,6 +62,7 @@
   .media img{width:100%;height:100%;object-fit:cover;border-radius:4px}
   .media:has(video){aspect-ratio:auto;border:none;padding:0;background:#111;border-radius:4px}
   .media video{display:block;width:100%;height:auto;border-radius:4px}
+  .caption{font-size:0.85rem;color:var(--ink-soft);margin-top:0.5rem;max-width:38rem}
 
   .reads{display:flex;flex-direction:column;gap:1.6rem}
   .read .figures{font-size:1.7rem;font-weight:500;letter-spacing:-0.01em;line-height:1.1;font-variant-numeric:tabular-nums}
@@ -119,7 +120,8 @@
   <div class="entry-main">
     <p>A cable-driven robot that rides above terraced orchards. The farm is scanned into a Gaussian splat, and my job was turning that photoreal blur into things the robot can reason about: this tree, that apple, a path to it.</p>
     <p>I built the 3D instance segmentation pipeline (SAM&nbsp;3 masks lifted through 85 camera poses, identity resolved by mask overlap instead of tracking), made the C++/OpenGL renderer fast enough to use, swapped A* for Theta* pathfinding, and shipped a natural language command bar so an operator can type "send the robot to the tree with the most apples."</p>
-    <div class="media">
+    <div class="media"><video src="tanada.mp4" autoplay muted loop playsinline></video></div>
+<p class="caption">Splat orbit · hover-to-voxel · click a tree, get its detected fruit · "which tree has the most apples" · click a tree and the rig flies to it</p>
       Drop a 15-second screen recording of the orchard scene here:
       picking a fruit, then the planned path. (Replace this div with a &lt;video&gt; tag.)
     </div>
