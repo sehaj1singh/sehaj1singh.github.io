@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sehaj Singh</title>
 <meta name="description" content="Computer engineering student at UMD. Perception, planning, and rendering for robots.">
+<meta property="og:title" content="Sehaj Singh">
+<meta property="og:description" content="Perception, planning, and rendering for robots. Computer engineering at UMD.">
+<meta property="og:image" content="https://sehaj1singh.github.io/og.png">
+<meta property="og:url" content="https://sehaj1singh.github.io">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
@@ -60,9 +65,9 @@
     color:var(--ink-soft);font-size:0.9rem;text-align:center;padding:1rem;
   }
   .media img{width:100%;height:100%;object-fit:cover;border-radius:4px}
+  .caption{font-size:0.85rem;color:var(--ink-soft);margin-top:0.5rem;max-width:38rem}
   .media:has(video){aspect-ratio:auto;border:none;padding:0;background:#111;border-radius:4px}
   .media video{display:block;width:100%;height:auto;border-radius:4px}
-  .caption{font-size:0.85rem;color:var(--ink-soft);margin-top:0.5rem;max-width:38rem}
 
   .reads{display:flex;flex-direction:column;gap:1.6rem}
   .read .figures{font-size:1.7rem;font-weight:500;letter-spacing:-0.01em;line-height:1.1;font-variant-numeric:tabular-nums}
@@ -113,16 +118,15 @@
     <div class="name">Tanada Hime</div>
     <div class="role">Software engineering intern<br>Paphos Oneironautics<br>Summer 2026</div>
     <div class="links">
-      <!-- TODO: add repo link once the pipeline is public -->
-      <a href="#">Pipeline code</a>
+      <a href="https://github.com/sehaj1singh/orchard-perception">Pipeline code</a>
+      <a href="https://github.com/Wesxdz/landaree_line">Engine (Landaree Line)</a>
     </div>
   </div>
   <div class="entry-main">
     <p>A cable-driven robot that rides above terraced orchards. The farm is scanned into a Gaussian splat, and my job was turning that photoreal blur into things the robot can reason about: this tree, that apple, a path to it.</p>
     <p>I built the 3D instance segmentation pipeline (SAM&nbsp;3 masks lifted through 85 camera poses, identity resolved by mask overlap instead of tracking), made the C++/OpenGL renderer fast enough to use, swapped A* for Theta* pathfinding, and shipped a natural language command bar so an operator can type "send the robot to the tree with the most apples."</p>
     <div class="media"><video src="tanada.mp4" autoplay muted loop playsinline></video></div>
-<p class="caption">Splat orbit · hover-to-voxel · click a tree, get its detected fruit · "which tree has the most apples" · click a tree and the rig flies to it</p>
-    </div>
+    <p class="caption">Splat orbit &middot; hover-to-voxel &middot; click a tree, get its detected fruit &middot; "which tree has the most apples" &middot; click a tree and the rig flies to it</p>
   </div>
   <div class="reads">
     <div class="read">
@@ -178,21 +182,6 @@
   </div>
 </section>
 
-<section class="entry">
-  <div class="entry-side">
-    <div class="name">Internia</div>
-    <div class="role">Co-built with a friend<br>2026</div>
-  </div>
-  <div class="entry-main">
-    <p>An ML research paper recommender on the Semantic Scholar API. I built the Next.js/TypeScript frontend with NextAuth, on a FastAPI and MongoDB backend.</p>
-  </div>
-  <div class="reads">
-    <div class="read single">
-      <div class="figures"><span class="after">1M+</span></div>
-      <div class="what">papers filtered across 24 research domains</div>
-    </div>
-  </div>
-</section>
 
 <section class="also">
   <h2>Also</h2>
